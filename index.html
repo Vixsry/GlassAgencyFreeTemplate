@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlassCompany</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- COSTOM CSS -->
+    <link rel="stylesheet" href="CSS/Portofolio.css">
+    <style>
+    .hero-section {
+    min-height: 100vh;
+    background: url('Assets/Img/Hero.png') center/cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><b>Glass</b>Company</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="hero-glass" data-aos="zoom-in">
+                        <h1 class="display-4 fw-bold mb-4">Welcome to GlassCompany</h1>
+                        <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#contact" class="btn btn-glass">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="glass-effect p-4" data-aos="zoom-in">
+                        <h2 class="mb-4">About Us</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="row mt-4">
+                            <div class="col-6 mb-3">
+                                <div class="stats-card">
+                                    <i class="bi bi-people-fill fs-1 text-white mb-2"></i>
+                                    <h3>50+</h3>
+                                    <p>Team Members</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="stats-card">
+                                    <i class="bi bi-trophy-fill fs-1 text-white mb-2"></i>
+                                    <h3>200+</h3>
+                                    <p>Projects Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="Assets/Img/About.png" alt="About Us" class="img-fluid rounded-3 floating">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="zoom-in">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="service-card" data-aos="fade-up">
+                        <i class="bi bi-laptop fs-1 mb-3"></i>
+                        <h3>Web Development</h3>
+                        <p>Custom websites and web applications tailored to your needs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-card" data-aos="fade-up">
+                        <i class="bi bi-phone fs-1 mb-3"></i>
+                        <h3>Mobile Development</h3>
+                        <p>Native and cross-platform mobile applications.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-card" data-aos="fade-up">
+                        <i class="bi bi-bar-chart fs-1 mb-3"></i>
+                        <h3>Digital Marketing</h3>
+                        <p>Comprehensive digital marketing strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="zoom-in">Our Portfolio</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item" data-aos="fade-up">
+                        <img src="Assets/Img/Portofolio/Portofolio-1.png" alt="Project 1" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="glass-effect p-4 text-center">
+                                <h4>WEBSITE COMPANY</h4>
+                                <p>WEB DEVELOPMENT</p>
+                                <a href="#" class="btn btn-glass btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Continuing Portfolio Section -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item" data-aos="fade-up">
+                        <img src="Assets/Img/Portofolio/Portofolio-2.png" alt="Project 2" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="glass-effect p-4 text-center">
+                                <h4 class="mb-2">MOBILE APP PROJECT</h4>
+                                <p class="mb-3">IOS & ANDROID DEVELOPMENT</p>
+                                <a href="#" class="btn btn-glass btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item" data-aos="fade-up">
+                        <img src="Assets/Img/Portofolio/Portofolio-3.png" alt="Project 3" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="glass-effect p-4 text-center">
+                                <h4 class="mb-2">MARKETING</h4>
+                                <p class="mb-3">DIGITAL MARKETING</p>
+                                <a href="#" class="btn btn-glass btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item" data-aos="fade-up">
+                        <img src="Assets/Img/Portofolio/Portofolio-4.png" alt="Project 4" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="glass-effect p-4 text-center">
+                                <h4 class="mb-2">E-COMMERCE PLATFORM</h4>
+                                <p class="mb-3">WEB DEVELOPMENT</p>
+                                <a href="#" class="btn btn-glass btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item" data-aos="fade-up">
+                        <img src="Assets/Img/Portofolio/Portofolio-5.png" alt="Project 5" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="glass-effect p-4 text-center">
+                                <h4 class="mb-2">UI/UX DESIGN</h4>
+                                <p class="mb-3">CREATIVE DESIGN</p>
+                                <a href="#" class="btn btn-glass btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item" data-aos="fade-up">
+                        <img src="Assets/Img/Portofolio/Portofolio-6.png" alt="Project 6" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="glass-effect p-4 text-center">
+                                <h4 class="mb-2">SOFTWARE SOLUTION</h4>
+                                <p class="mb-3">ENTERPRISE SOFTWARE</p>
+                                <a href="#" class="btn btn-glass btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Filter -->
+            <div class="text-center mt-5">
+                <div class="glass-effect d-inline-block p-3">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-glass active">All</button>
+                        <button type="button" class="btn btn-glass">Web</button>
+                        <button type="button" class="btn btn-glass">Mobile</button>
+                        <button type="button" class="btn btn-glass">Design</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Modal -->
+            <div class="modal fade" id="portfolioModal" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content glass-effect">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title">Project Details</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="" alt="Project" class="img-fluid rounded" id="modalImage">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 id="modalTitle" class="mb-3"></h3>
+                                    <p id="modalDescription" class="mb-4"></p>
+                                    <div class="project-details">
+                                        <div class="mb-3">
+                                            <strong>Client:</strong> <span id="modalClient"></span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <strong>Technologies:</strong> <span id="modalTech"></span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <strong>Duration:</strong> <span id="modalDuration"></span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-glass" id="modalLink">Visit Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="zoom-in">Get In Touch</h2>
+        <div class="row justify-content-center">
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+                <div class="glass-effect p-4 mb-4">
+                    <form class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control glass-input" id="name" placeholder="Your Name">
+                                    <label for="name" class="text-white">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control glass-input" id="email" placeholder="Your Email">
+                                    <label for="email" class="text-white">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control glass-input" id="subject" placeholder="Subject">
+                                    <label for="subject" class="text-white">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control glass-input" id="message" placeholder="Your Message" style="height: 150px"></textarea>
+                                    <label for="message" class="text-white">Your Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-glass w-100 py-3">
+                                    <i class="bi bi-send me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-lg-5 offset-lg-1">
+                <div class="glass-effect p-4 mb-4">
+                    <h3 class="mb-4">Contact Information</h3>
+                    <div class="contact-info">
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-box me-3">
+                                <i class="bi bi-geo-alt-fill fs-4"></i>
+                            </div>
+                            <div class="info-text">
+                                <h5 class="mb-1">Our Location</h5>
+                                <p class="mb-0">123 Business Street, New York, USA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-box me-3">
+                                <i class="bi bi-envelope-fill fs-4"></i>
+                            </div>
+                            <div class="info-text">
+                                <h5 class="mb-1">Email Us</h5>
+                                <p class="mb-0">info@glasscompany.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-box me-3">
+                                <i class="bi bi-telephone-fill fs-4"></i>
+                            </div>
+                            <div class="info-text">
+                                <h5 class="mb-1">Call Us</h5>
+                                <p class="mb-0">+1 (234) 567-8900</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex align-items-center">
+                            <div class="icon-box me-3">
+                                <i class="bi bi-clock-fill fs-4"></i>
+                            </div>
+                            <div class="info-text">
+                                <h5 class="mb-1">Working Hours</h5>
+                                <p class="mb-0">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="social-links mt-4">
+                        <h5 class="mb-3">Follow Us</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="social-icon" data-aos="fade-up">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon" data-aos="fade-up">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" data-aos="fade-up">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" data-aos="fade-up">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="glass-effect p-2 mt-4">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1645563347013!5m2!1sen!2s"
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<footer class="footer-glass">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-lg-4 mb-4">
+                <h4 class="mb-4">GlassCompany</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt.</p>
+                <div class="social-icons mt-4">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-4 mb-4">
+                <h4 class="mb-4">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="bi bi-chevron-right"></i> Home</a></li>
+                    <li><a href="#"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                    <li><a href="#"><i class="bi bi-chevron-right"></i> Services</a></li>
+                    <li><a href="#"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-lg-4 mb-4">
+                <h4 class="mb-4">Newsletter</h4>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partners Slider -->
+        <div class="partners-slider mt-5">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/api/placeholder/200/100" alt="Partner 1" class="partner-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/api/placeholder/200/100" alt="Partner 2" class="partner-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/api/placeholder/200/100" alt="Partner 3" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright text-center">
+            <p>&copy; 2024 Your Company. All rights reserved.<br><i class="bi bi-heart-fill"> Deasin By Viksry</i></p>
+            
+        </div>
+    </div>
+</footer>
+
+<!-- BOOTSTRAP SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+<!-- SWIPER SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="Script/Portofolio-Scrip-SWIPER.js"></script>
+    
+<!-- AOS SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="Script/Portofolio-Script-AOS.js"></script>
+
+    <!-- SCRIPT -->
+    <script src="Script/Portofolio-custom.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.contact-form');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Menambahkan state loading pada tombol submit
+        const submitBtn = this.querySelector('button[type="submit"]');
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sending...';
+        submitBtn.disabled = true;
+        
+        // Simulasi pengiriman form
+        setTimeout(() => {
+            submitBtn.innerHTML = '<i class="bi bi-check-circle me-2"></i>Sent Successfully!';
+            submitBtn.classList.add('submit-success');
+            
+            // Reset form setelah delay
+            setTimeout(() => {
+                form.reset();
+                submitBtn.innerHTML = '<i class="bi bi-send me-2"></i>Send Message';
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('submit-success');
+            }, 3000);
+        }, 2000);
+    });
+});
+    
+    </script>
+</body>
+</html>
