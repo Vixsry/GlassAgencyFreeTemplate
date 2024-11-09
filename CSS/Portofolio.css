@@ -1,0 +1,557 @@
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background: linear-gradient(45deg, #4158D0, #C850C0, #FFCC70);
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+}
+
+.glass-effect {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 var(--glass-shadow);
+    border-radius: 20px;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+
+/* HERO SECTTION */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-glass {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* SERVICE SECTTION */
+.service-card {
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+/* PORTOFOLIO SECTTION */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+}
+
+.portfolio-item:hover .portfolio-img {
+    transform: scale(1.1);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+
+/* TESTIMONI SECTTION */
+.testimonial-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    margin: 1rem;
+    height: auto;
+}
+
+
+/* CONTACT SECTTION */
+.contact-form input,
+.contact-form textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+
+/* SOCIAL LINK SECTTION */
+.social-links a {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.stats-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-glass {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .service-card {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-item {
+        margin-bottom: 20px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+    }
+}
+
+/* Animation Classes */
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.btn-glass:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* PORTOFOLIO SECTION */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-img {
+    transform: scale(1.1);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay .glass-effect {
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay .glass-effect {
+    transform: translateY(0);
+}
+
+.btn-group .btn-glass {
+    margin: 0 5px;
+    border-radius: 30px;
+}
+
+.btn-group .btn-glass.active {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .portfolio-img {
+        height: 250px;
+    }
+    
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .btn-group .btn-glass {
+        margin: 5px;
+    }
+}
+
+/* PORTOFOLIO SECTION */
+.glass-input {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-input:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1) !important;
+}
+
+.glass-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-floating > label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-floating > .glass-input:focus ~ label,
+.form-floating > .glass-input:not(:placeholder-shown) ~ label {
+    color: rgba(255, 255, 255, 0.9);
+    background: transparent;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover .icon-box {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.map-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        margin-top: 2rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .map-container {
+        margin-top: 2rem;
+    }
+}
+
+/* Animation for form submission */
+@keyframes submitSuccess {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.submit-success {
+    animation: submitSuccess 0.5s ease;
+}
+
+/* FOOTER SECTION */
+.footer-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 60px 0 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    z-index: -1;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    width: 45px;
+    height: 45px;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-icons i:hover {
+    transform: translateY(-5px);
+    color: aquamarine;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4ecdc4;
+    padding-left: 10px;
+}
+
+.partners-slider {
+    padding: 20px 0;
+}
+
+.partner-logo {
+    height: 50px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+
+/* Style input and button */
+.input-group {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.input-group input {
+  background: transparent;
+  border: none;
+  padding: 12px 15px;
+  color: #333;
+}
+
+.input-group input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.input-group .btn-primary {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.input-group .btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Newsletter heading */
+h6 {
+  color: #333;
+  font-weight: 600;
+}
