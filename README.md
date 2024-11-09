@@ -38,3 +38,12 @@ Menghapus atribut pembuat desain template ini.
 
 ## NOTE ⚠️
 Semua elemen yang digunakan dalam template website ini memiliki lisensinya masing-masing. Kami berharap Anda membaca ketentuan lisensi di situs web atau GitHub Pihak ketiga masing-masing
+
+## Follow Me
+[![Instagram](https://img.shields.io/badge/Instagram-@username-%23E4405F?style=flat&logo=instagram&logoColor=white)]([https://instagram.com/username](https://www.instagram.com/viksry12/profilecard/?igsh=MXV6bzVzcnZhY3h2Yw==))
+
+[![Facebook](https://img.shields.io/badge/Facebook-@username-%231877F2?style=flat&logo=facebook&logoColor=white)]([https://facebook.com/username](https://www.facebook.com/share/13SEaGkmzu/))
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-@username-%230077B5?style=flat&logo=linkedin&logoColor=white)]([https://linkedin.com/in/username](https://www.linkedin.com/in/viksry)
+
+[![Twitter](https://img.shields.io/badge/Twitter-@username-%231DA1F2?style=flat&logo=twitter&logoColor=white)]([https://twitter.com/username](https://x.com/Vixsry)
