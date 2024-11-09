@@ -22,17 +22,21 @@ Lihat demo online di: [GlassAgencyFreeTemplate Demo](https://contohdemo.com)
 - **Bootstrap**
 - **BootsrapIcon**
 
-## Struktur Folder
+[BootstrapIcon]
+(https://icons.getbootstrap.com/)
+[Bootstrap]
+(https://getbootstrap.com/)
+[AosAnimation]
+(https://michalsnik.github.io/aos/)
+[Swiper]
+(https://swiperjs.com/)
 
-```plaintext
-GlassAgencyFreeTemplate/
-├── index.html             
-├── CSS/
-│   └── Portofolio.css          
-├── Script/
-│   └── Portofolio-Scrip-SWIPER.js
-|     └── Portofolio-Script-AOS.js          
-├── Asset/
-│   └── Img*
-           └── Hero.png
-             └── About.png
+## YANG BOLEH DAN TIDAK BOLEH
+Anda boleh:
+Menggunakan template ini untuk keperluan pribadi atau komersial.
+
+Yang tidak boleh:
+Menghapus atribut pembuat desain template ini.
+
+## NOTE ⚠️
+Semua elemen yang digunakan dalam template website ini memiliki lisensinya masing-masing. Kami berharap Anda membaca ketentuan lisensi di situs web atau GitHub Pihak ketiga masing-masing
