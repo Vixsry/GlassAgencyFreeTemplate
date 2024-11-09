@@ -42,6 +42,6 @@ Semua elemen yang digunakan dalam template website ini memiliki lisensinya masin
 ## Follow Me
 [![Instagram](https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Color/Instagram.svg)](https://instagram.com/viksry12)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-@username-%230077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/viksry)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-@viksry12-%230077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/viksry)
 
-[![Twitter](https://img.shields.io/badge/Twitter-@username-%231DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/Vixsry)
+[![Twitter](https://img.shields.io/badge/Twitter-@Vixsry-%231DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/Vixsry)
