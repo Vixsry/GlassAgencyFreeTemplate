@@ -22,14 +22,12 @@ Lihat demo online di: [GlassAgencyFreeTemplate Demo](https://contohdemo.com)
 - **Bootstrap**
 - **BootsrapIcon**
 
-[BootstrapIcon]
-(https://icons.getbootstrap.com/)
-[Bootstrap]
-(https://getbootstrap.com/)
-[AosAnimation]
-(https://michalsnik.github.io/aos/)
-[Swiper]
-(https://swiperjs.com/)
+## Quick Link
+
+- [Bootstrap Icon](https://icons.getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [AOS Animation](https://michalsnik.github.io/aos/)
+- [Swiper.js](https://swiperjs.com/)
 
 ## YANG BOLEH DAN TIDAK BOLEH
 Anda boleh:
