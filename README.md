@@ -4,7 +4,7 @@ GlassAgencyFreeTemplate adalah sebuah template website yang mengusung tema *mode
 
 ## Demo
 
-Lihat demo online di: [GlassAgencyFreeTemplate Demo]([https://contohdemo.com](https://vixsry.github.io/GlassAgencyFreeTemplate/))
+Lihat demo online di: [GlassAgencyFreeTemplate Demo]([https://contohdemo.com](https://vixsry.github.io/GlassAgencyFreeTemplate/)
 
 ## Fitur
 
